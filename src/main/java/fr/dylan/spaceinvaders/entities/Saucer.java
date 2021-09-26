@@ -15,7 +15,6 @@ public class Saucer extends Entity {
         super(x, y, width, height);
         super.setImgPattern(new ImagePattern(Images.SAUCER));
         super.setFill(super.getImgPattern());
-        this.saucerPassingSound.setVolume(0.01);
         this.saucerPassingSound.play();
         this.isDead = false;
     }

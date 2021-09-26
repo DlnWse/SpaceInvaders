@@ -2,7 +2,6 @@ package fr.dylan.spaceinvaders;
 
 import fr.dylan.spaceinvaders.entities.*;
 import fr.dylan.spaceinvaders.utils.*;
-import javafx.animation.AnimationTimer;
 import javafx.beans.binding.Bindings;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
@@ -63,17 +62,20 @@ public class SpaceController implements Sounds {
                 timer = new FixedFrameRateTimer(120) {
                         @Override
                         public void loop() {
+                                System.out.println("loop haut");
                                 movingAliensCount++;
                                 saucerTime++;
 
                                 handleShip();
                                 if (ship.isShipIsShooting()) {
+                                        System.out.println("handle shipshot");
                                         handleShipShot();
                                 }
                                 collisions();
                                 // On refresh la position du tableau d'aliens en fonction de l'incrémentation de leur vitesse
                                 if (movingAliensCount % (100 - 10L * Alien.getSpeed()) == 0) {
                                         Alien.aliensMoving(aliens);
+                                        System.out.println("alien moov");
                                 }
                                 aliensShooting();
                                 AlienShot.handleAliensShot(alienShotList, board);
@@ -86,7 +88,9 @@ public class SpaceController implements Sounds {
                                 } else if (saucer != null) {
                                         saucer.saucerMoving(Constants.SAUCER_DELTAX);
                                 }
+                                System.out.println("pas fps");
                                 lblFPS.setText("FPS : " + (int)getFrameRate());
+                                System.out.println("fps");
 
                                 endGame();
 
@@ -110,7 +114,6 @@ public class SpaceController implements Sounds {
         @FXML
         void onStartAction() {
                 if (!initStartButton) {
-
                         Animation.animateLogoSpaceInvaders(imgLogo, 0, -500, 600, 1, 0, 400);
                         board.requestFocus();
                         initGame();
@@ -120,6 +123,7 @@ public class SpaceController implements Sounds {
                         Initialisation.initAliens(aliens, board);
                         Initialisation.initSaucer100(saucer100Rect, board);
                         timer.start();
+
 
                         // On lie le lblScore avec notre IntegerProperty -> score
                         lblScore.textProperty().bind(Bindings.convert(score));
@@ -419,6 +423,7 @@ public class SpaceController implements Sounds {
         }
 
         private void endGame() {
+
                 // GAIN DE LA PARTIE
                 // On gagne quand la totalité des aliens sont morts
                 boolean result = Arrays.stream(aliens).allMatch(a -> Arrays.stream(a).allMatch(Alien::isDead));
@@ -426,6 +431,7 @@ public class SpaceController implements Sounds {
                         timer.stop();
                         lblEndGame.setText(Constants.WIN);
                         board.getChildren().remove(ship);
+                        System.out.println("GAIN");
                 }
 
                 // PERTE DE LA PARTIE
@@ -448,6 +454,7 @@ public class SpaceController implements Sounds {
                         Audio.playSound(SHIP_DESTRUCTION);
                         lblEndGame.setText(Constants.LOOSE);
                         timer.stop();
+                        System.out.println("PERTE");
                 }
         }
 }

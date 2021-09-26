@@ -8,7 +8,7 @@ import javafx.scene.paint.ImagePattern;
 import java.util.ConcurrentModificationException;
 import java.util.LinkedList;
 
-public class AlienShot extends  Entity{
+public class AlienShot extends Entity {
 
     public AlienShot(double x, double y, double width, double height) {
         super(x, y, width, height);
@@ -16,20 +16,21 @@ public class AlienShot extends  Entity{
         super.setFill(super.getImgPattern());
     }
 
-    public static void handleAliensShot (LinkedList<AlienShot> aliensShotList, Pane board){
+    public static void handleAliensShot(LinkedList<AlienShot> aliensShotList, Pane board) {
         try {
             aliensShotList.forEach(shot -> {
-                if (shot.getY() > Constants.WINDOW_HEIGHT){
+                // On gère le passage du tir hors du board
+                if (shot.getY() > Constants.WINDOW_HEIGHT) {
                     aliensShotList.remove(shot);
                     board.getChildren().remove(shot);
-                } else {
+                } else { // Sinon, on gère la progression du tir
                     shot.setY(shot.getY() + Constants.ALIEN_SHOT_DELTAY);
                     // On gère le son si on veut
                     //Audio.playSound(Sounds.ALIEN_SHOT);
                 }
             });
-        } catch (ConcurrentModificationException e){
-            System.out.println("ALIENT SHOT -> CURRENT MODIFICATION EXCEPTION");
+        } catch (ConcurrentModificationException e) {
+            System.out.println("ALIEN SHOT -> CONCURRENT MODIFICATION EXCEPTION");
         }
     }
 }

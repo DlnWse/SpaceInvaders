@@ -12,13 +12,13 @@ public abstract class Images {
 
     public final static Image ALIEN_SHOT = new Image(PATH + "aliensShoot2.png");
 
-    private final static Image IMG_BRICK1 = new Image(PATH + "brick1.png");
-    private final static Image IMG_BRICK2 = new Image(PATH + "brick2.png");
-    private final static Image IMG_BRICK3 = new Image(PATH + "brick3.png");
-    private final static Image IMG_BRICK4 = new Image(PATH + "brick4.png");
-    private final static Image IMG_BRICK5 = new Image(PATH + "brick5.png");
-    private final static Image IMG_BRICK6 = new Image(PATH + "brick6.png");
-    private final static Image IMG_BRICK7 = new Image(PATH + "brick7.png");
+    private final static Image IMG_BRICK1 = new Image(PATH + "bricks/brick1.png");
+    private final static Image IMG_BRICK2 = new Image(PATH + "bricks/brick2.png");
+    private final static Image IMG_BRICK3 = new Image(PATH + "bricks/brick3.png");
+    private final static Image IMG_BRICK4 = new Image(PATH + "bricks/brick4.png");
+    private final static Image IMG_BRICK5 = new Image(PATH + "bricks/brick5.png");
+    private final static Image IMG_BRICK6 = new Image(PATH + "bricks/brick6.png");
+    private final static Image IMG_BRICK7 = new Image(PATH + "bricks/brick7.png");
 
     public final static ImagePattern BRICK1 = new ImagePattern(IMG_BRICK1);
     public final static ImagePattern BRICK2 = new ImagePattern(IMG_BRICK2);
@@ -39,33 +39,33 @@ public abstract class Images {
     public final static Image SAUCER_100 = new Image(PATH + "saucer100.png");
 
     /*************************** EXPLOSIONS IMAGES ***********************************/
-    public final static Image ALIEN_EX1 = new Image(PATH + "ExAlien1.png");
-    public final static Image ALIEN_EX2 = new Image(PATH + "ExAlien2.png");
-    public final static Image ALIEN_EX3 = new Image(PATH + "ExAlien3.png");
-    public final static Image ALIEN_EX4 = new Image(PATH + "ExAlien4.png");
-    public final static Image ALIEN_EX5 = new Image(PATH + "ExAlien5.png");
-    public final static Image ALIEN_EX6 = new Image(PATH + "ExAlien6.png");
-    public final static Image ALIEN_EX7 = new Image(PATH + "ExAlien7.png");
-    public final static Image ALIEN_EX8 = new Image(PATH + "ExAlien8.png");
+    public final static Image ALIEN_EX1 = new Image(PATH + "explosionAlien/ExAlien1.png");
+    public final static Image ALIEN_EX2 = new Image(PATH + "explosionAlien/ExAlien2.png");
+    public final static Image ALIEN_EX3 = new Image(PATH + "explosionAlien/ExAlien3.png");
+    public final static Image ALIEN_EX4 = new Image(PATH + "explosionAlien/ExAlien4.png");
+    public final static Image ALIEN_EX5 = new Image(PATH + "explosionAlien/ExAlien5.png");
+    public final static Image ALIEN_EX6 = new Image(PATH + "explosionAlien/ExAlien6.png");
+    public final static Image ALIEN_EX7 = new Image(PATH + "explosionAlien/ExAlien7.png");
+    public final static Image ALIEN_EX8 = new Image(PATH + "explosionAlien/ExAlien8.png");
 
-    public final static Image ALIEN_SHOOT_EX1 = new Image(PATH + "ExAlienShoot1.png");
-    public final static Image ALIEN_SHOOT_EX2 = new Image(PATH + "ExAlienShoot2.png");
-    public final static Image ALIEN_SHOOT_EX3 = new Image(PATH + "ExAlienShoot3.png");
-    public final static Image ALIEN_SHOOT_EX4 = new Image(PATH + "ExAlienShoot4.png");
-    public final static Image ALIEN_SHOOT_EX5 = new Image(PATH + "ExAlienShoot5.png");
-    public final static Image ALIEN_SHOOT_EX6 = new Image(PATH + "ExAlienShoot6.png");
-    public final static Image ALIEN_SHOOT_EX7 = new Image(PATH + "ExAlienShoot7.png");
+    public final static Image ALIEN_SHOOT_EX1 = new Image(PATH + "explosionAlienShoot/ExAlienShoot1.png");
+    public final static Image ALIEN_SHOOT_EX2 = new Image(PATH + "explosionAlienShoot/ExAlienShoot2.png");
+    public final static Image ALIEN_SHOOT_EX3 = new Image(PATH + "explosionAlienShoot/ExAlienShoot3.png");
+    public final static Image ALIEN_SHOOT_EX4 = new Image(PATH + "explosionAlienShoot/ExAlienShoot4.png");
+    public final static Image ALIEN_SHOOT_EX5 = new Image(PATH + "explosionAlienShoot/ExAlienShoot5.png");
+    public final static Image ALIEN_SHOOT_EX6 = new Image(PATH + "explosionAlienShoot/ExAlienShoot6.png");
+    public final static Image ALIEN_SHOOT_EX7 = new Image(PATH + "explosionAlienShoot/ExAlienShoot7.png");
 
-    public final static Image SHIP_EX1 = new Image(PATH + "ExShip1.png");
-    public final static Image SHIP_EX2 = new Image(PATH + "ExShip2.png");
-    public final static Image SHIP_EX3 = new Image(PATH + "ExShip3.png");
-    public final static Image SHIP_EX4 = new Image(PATH + "ExShip4.png");
-    public final static Image SHIP_EX5 = new Image(PATH + "ExShip5.png");
-    public final static Image SHIP_EX6 = new Image(PATH + "ExShip6.png");
-    public final static Image SHIP_EX7 = new Image(PATH + "ExShip7.png");
-    public final static Image SHIP_EX8 = new Image(PATH + "ExShip8.png");
-    public final static Image SHIP_EX9 = new Image(PATH + "ExShip9.png");
-    public final static Image SHIP_EX10 = new Image(PATH + "ExShip10.png");
-    public final static Image SHIP_EX11 = new Image(PATH + "ExShip11.png");
+    public final static Image SHIP_EX1 = new Image(PATH + "explosionShip/ExShip1.png");
+    public final static Image SHIP_EX2 = new Image(PATH + "explosionShip/ExShip2.png");
+    public final static Image SHIP_EX3 = new Image(PATH + "explosionShip/ExShip3.png");
+    public final static Image SHIP_EX4 = new Image(PATH + "explosionShip/ExShip4.png");
+    public final static Image SHIP_EX5 = new Image(PATH + "explosionShip/ExShip5.png");
+    public final static Image SHIP_EX6 = new Image(PATH + "explosionShip/ExShip6.png");
+    public final static Image SHIP_EX7 = new Image(PATH + "explosionShip/ExShip7.png");
+    public final static Image SHIP_EX8 = new Image(PATH + "explosionShip/ExShip8.png");
+    public final static Image SHIP_EX9 = new Image(PATH + "explosionShip/ExShip9.png");
+    public final static Image SHIP_EX10 = new Image(PATH + "explosionShip/ExShip10.png");
+    public final static Image SHIP_EX11 = new Image(PATH + "explosionShip/ExShip11.png");
 
 }

@@ -104,7 +104,11 @@ public class Alien  extends Entity {
         return type;
     }
 
-    public boolean isDead(){ return isDead;}
+    public boolean isDead() {
+        return isDead;
+    }
 
-    public void setDead(boolean dead ){isDead = dead;}
+    public void setDead(boolean dead) {
+        isDead = dead;
+    }
 }

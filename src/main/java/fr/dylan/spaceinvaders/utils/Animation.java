@@ -7,6 +7,7 @@ import javafx.scene.image.ImageView;
 import javafx.util.Duration;
 
 public class Animation {
+
     public static void animateLogoSpaceInvaders(ImageView imgLogo, double fromY, double toY,
                                                 double translationDelay, double fromAlpha,
                                                 double toAlpha, double alphaDelay) {
@@ -22,4 +23,5 @@ public class Animation {
         fade.setToValue(toAlpha);
         fade.play();
     }
+
 }
