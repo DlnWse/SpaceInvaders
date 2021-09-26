@@ -1,13 +1,17 @@
 package fr.dylan.spaceinvaders.utils;
 
-public class Sounds {
+public interface Sounds {
 
-    private final static String PATH = "File:./src/main/resources/fr/dylan/spaceinvaders/sounds/";
+ String PATH = "File:./src/main/resources/fr/dylan/spaceinvaders/sounds/";
 
-    public final static String BRICK_DESTRUCTION = PATH + "brickDestructionSound.wav";
-    public final static String SHIP_SHOT = PATH + "shipShotSound.wav";
-    public final static String ALIEN_DESTRUCTION = PATH + "alienDeadSound.wav";
-    public final static String SHIP_DESTRUCTION = PATH + "shipDestructionSound.wav";
-    public final static String ALIEN_SHOT = PATH + "alienShotSound1.wav";
-    public final static String SAUCER_PASSING = PATH + "saucerPassingSound.wav";
+       String BRICK_DESTRUCTION = PATH + "brickDestructionSound.wav";
+       String SHIP_SHOT = PATH + "shipShotSound.wav";
+       String ALIEN_DESTRUCTION = PATH + "alienDeadSound.wav";
+       String SHIP_DESTRUCTION = PATH + "shipDestructionSound.wav";
+       String ALIEN_SHOT1 = PATH + "alienShotSound1.wav";
+       String ALIEN_SHOT2 = PATH + "alienShotSound2.wav";
+       String ALIEN_SHOT3 = PATH + "alienShotSound3.wav";
+       String ALIEN_SHOT4 = PATH + "alienShotSound4.wav";
+       String SAUCER_PASSING = PATH + "saucerPassingSound.wav";
+       String SAUCER_DESTRUCTION = PATH + "saucerDestructionSound.wav";
 }

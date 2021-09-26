@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.dylan.spaceinvaders.HomeController">
+    <children>
+        <Button layoutX="135.0" layoutY="351.0" mnemonicParsing="false" onAction="#gameOnAction" text="Jeu" />
+        <TextField fx:id="tfTest" layoutX="220.0" layoutY="351.0" />
+        <ImageView fitHeight="289.0" fitWidth="326.0" layoutX="137.0" layoutY="-43.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/logoSpaceInvaders.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

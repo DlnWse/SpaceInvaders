@@ -18,7 +18,7 @@ public class Alien  extends Entity {
         super.setImg(image);
         super.setImgPattern(new ImagePattern(super.getImg()));
         super.setFill(super.getImgPattern());
-
+        this.isDead = false;
     }
 
     // Constructeur supplémentaire avec le type d'alien précisé, qui influera sur le score
@@ -103,4 +103,8 @@ public class Alien  extends Entity {
     public int getType() {
         return type;
     }
+
+    public boolean isDead(){ return isDead;}
+
+    public void setDead(boolean dead ){isDead = dead;}
 }

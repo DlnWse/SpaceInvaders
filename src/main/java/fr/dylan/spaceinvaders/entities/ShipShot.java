@@ -1,6 +1,5 @@
 package fr.dylan.spaceinvaders.entities;
 
-import fr.dylan.spaceinvaders.utils.Constants;
 import fr.dylan.spaceinvaders.utils.Images;
 import javafx.scene.paint.ImagePattern;
 
@@ -15,4 +14,6 @@ public class ShipShot extends Entity{
         shipShot.setX(ship.getX() + 15);
         shipShot.setY(ship.getY());
     }
+
+
 }

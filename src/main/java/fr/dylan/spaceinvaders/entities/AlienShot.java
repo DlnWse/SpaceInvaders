@@ -1,9 +1,7 @@
 package fr.dylan.spaceinvaders.entities;
 
-import fr.dylan.spaceinvaders.utils.Audio;
 import fr.dylan.spaceinvaders.utils.Constants;
 import fr.dylan.spaceinvaders.utils.Images;
-import fr.dylan.spaceinvaders.utils.Sounds;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.ImagePattern;
 
@@ -26,12 +24,12 @@ public class AlienShot extends  Entity{
                     board.getChildren().remove(shot);
                 } else {
                     shot.setY(shot.getY() + Constants.ALIEN_SHOT_DELTAY);
-
+                    // On gère le son si on veut
+                    //Audio.playSound(Sounds.ALIEN_SHOT);
                 }
             });
         } catch (ConcurrentModificationException e){
             System.out.println("ALIENT SHOT -> CURRENT MODIFICATION EXCEPTION");
         }
-        }
-
+    }
 }

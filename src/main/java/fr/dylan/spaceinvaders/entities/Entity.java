@@ -4,7 +4,7 @@ import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Rectangle;
 
-public class Entity extends Rectangle {
+public abstract class Entity extends Rectangle {
 
     protected Image img;
     protected ImagePattern imgPattern;
@@ -13,6 +13,7 @@ public class Entity extends Rectangle {
         super(x, y, width, height);
     }
 
+    // Getters & Setters
     public Image getImg() {
         return img;
     }

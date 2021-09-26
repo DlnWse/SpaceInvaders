@@ -16,13 +16,14 @@ public class Utility {
         return response;
     }
 
-    public static boolean aliensTouchLeftSide(Alien[][] aliens){
+    public static boolean aliensTouchLeftSide(Alien[][] aliens) {
         boolean response = false;
-        for (int column = 0; column < 10; column++){
-            for (int line = 0; line < 5; line++){
-                if (aliens[line][column].getX() < Constants.WINDOW_MARGIN){
+        for (int column = 0; column < 10; column++) {
+            for (int line = 0; line < 5; line++) {
+                if (aliens[line][column].getX() < Constants.WINDOW_MARGIN + Constants.ALIEN_DELTAX) {
                     response = true;
-                    break;               }
+                    break;
+                }
             }
         }
         return response;
